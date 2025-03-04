@@ -37,6 +37,49 @@ public class Main {
                     biblioteca.agregarLibro(nuevoLibro);
                     System.out.println("Libro agregado exitosamente");
                     break;
+
+                case 2:
+                    //Buscar libros por titulos
+                    System.out.println("Ingrese el titulo que desa buscar");
+                    String tituloBuscar = entrada.nextLine();
+                    List <Libro> librosPorTitulo = biblioteca.buscarPorTitulo(tituloBuscar);
+                    if (librosPorTitulo.isEmpty()) {
+                        System.out.println("No se encontraron libros con ese titulo");
+                    } else {
+                        for (Libro libro: librosPorTitulo) {
+                            libro.mostrarInfo();
+                        }
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("Ingrese el autor que desea buscar");
+                    String autorBuscar = entrada.nextLine();
+                    List<Libro> librosPorAutor = biblioteca.buscarPorAutor(autorBuscar);
+                    if (librosPorAutor.isEmpty()) {
+                        System.out.println("No se encontraron libros de ese autor");
+
+                    } else {
+                        for (Libro libro: librosPorAutor){
+                            libro.mostrarInfo();
+                        }
+                    }
+                    break;
+
+                case 4:
+                    biblioteca.listarLibros();
+                    break;
+
+                case 5 :
+                    System.out.println("¡Gracias por usar nuestra biblioteca!");
+                    return;
+
+                default:
+                    System.out.println("Opción invalida, por favor intentelo nuevamente");
+
+                    break;
+
+
             }
         }
     }
