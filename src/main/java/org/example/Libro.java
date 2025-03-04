@@ -2,51 +2,51 @@ package org.example;
 
 public class Libro {
 
-    private String Titulo;
-    private String Autor;
-    private String Isbn;
-    private boolean Disponible;
+    private String titulo;
+    private String autor;
+    private String isbn;
+    private boolean disponible;
 
     public Libro (String Titulo, String Autor, String Isbn, boolean Disponible) {
-        this.Titulo = Titulo;
-        this.Autor = Autor;
-        this.Isbn = Isbn;
-        this.Disponible = Disponible;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.isbn = isbn;
+        this.disponible = disponible;
     }
 
     public String getTitulo(){
-        return Titulo;
+        return titulo;
         }
 
-    public void setTitulo(String Titulo){
-        this.Titulo=Titulo;
+    public void setTitulo(String titulo){
+        this.titulo=titulo;
         }
 
     public String getAutor(){
-        return Autor;
+        return autor;
     }
 
-    public void setAutor(){
-        this.Autor=Autor;
+    public void setAutor(String autor){
+        this.autor=autor;
     }
 
-    public String getIsbn(String Isbn){
-        return Isbn;
+    public String getIsbn(){
+        return isbn;
     }
 
-    public void setIsbn(String Isbn){
-        this.Isbn=Isbn;
+    public void setIsbn(String isbn){
+        this.isbn=isbn;
     }
 
     public boolean isDisponible(){
-        return Disponible;
+        return disponible;
     }
 
-    public void setDisponible(boolean Disponible){
-        this.Disponible=Disponible;
+    public void setDisponible(boolean disponible){
+        this.disponible=disponible;
     }
 
     public void mostrarInfo(){
-        System.out.println("Titulo: "+Titulo+",Autor"+Autor+", ISBN"+Isbn+", Disponible: "+(Disponible ? "Si" : "No"));
+        System.out.println("Titulo: "+titulo+",Autor"+autor+", ISBN"+isbn+", Disponible: "+(disponible ? "Si" : "No"));
     }
 }
