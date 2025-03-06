@@ -9,7 +9,7 @@ public class Libro {
     private boolean disponible; //Este atributo indica si el libro esta disponible (True) y si no esta disponible (False)
 
     //Este constructor de la clase libro recibe los parametros para almacenar los atributos
-    public Libro (String Titulo, String Autor, String Isbn, boolean Disponible) {
+    public Libro (String titulo, String autor, String isbn, boolean disponible) {
         this.titulo = titulo; //Asigna el valor que va a tener el parametro "titulo" al atributo de la clase
         this.autor = autor; //Asigna el valor que va a tener el parametro "autor" al atributo de la clase
         this.isbn = isbn; //Asigna el valor que va a tener el parametro "isbn" al atributo de la clase
