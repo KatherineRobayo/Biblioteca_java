@@ -12,11 +12,11 @@ public class Main { // se define la clase main
         while (true) { //Se usa el ciclo while para crear un bucle infinito en el cual se muestra el menu hasta que el usuario decida salir
             System.out.println("\n--- Menu de la Biblioteca ---");
             System.out.println("1. Agregar libro");
-            System.out.println("2. Buscar libro por titulo");
+            System.out.println("2. Buscar libro por título");
             System.out.println("3. Buscar libro por autor");
             System.out.println("4. Listar todos los libros");
             System.out.println("5. Salir");
-            System.out.println("Seleccione una opcion: ");
+            System.out.println("Seleccione una opción: ");
 
             int opcion= entrada.nextInt(); //Recibe la opcion ingresada por el usuario
             entrada.nextLine(); //Captura el salto de linea despues de ingresar el numero
